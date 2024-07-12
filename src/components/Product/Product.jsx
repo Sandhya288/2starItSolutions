@@ -1,5 +1,6 @@
 import React from 'react';
-import "./Product.css"
+import "./Product.css";
+
 const Products = () => {
     return (
         <div>
@@ -8,8 +9,8 @@ const Products = () => {
                 <hr className="centered-hr" />
             </div>
             <div className="container2" id="products">
+                
                 <Product
-                    
                     imgSrc="https://2staritsolution.netlify.app/sd.png"
                     alt="Product 1"
                     title="STORAGE DEVICES"
@@ -57,6 +58,12 @@ const Products = () => {
                     title="KEYBOARD AND MOUSE"
                     description="NVIDIA, ZOTAC, GEFORCE, AFOX Graphic cards"
                 />
+                <Product
+                    imgSrc="https://i.ebayimg.com/images/g/zEcAAOSwhtFhtBfF/s-l500.jpg"
+                    alt="Product 9"
+                    title="Fingerprint Identification Technology"
+                    description="NVIDIA, ZOTAC, GEFORCE, AFOX Graphic cards"
+                />
                 {/* Add more Product components for additional items */}
             </div>
         </div>
@@ -67,7 +74,7 @@ const Product = ({ imgSrc, alt, title, description }) => {
     return (
         <div className="product">
             <img src={imgSrc} alt={alt} />
-            <h2 style={{ fontWeight: 'bold' }}>{title}</h2>
+            <h2>{title}</h2>
             <p>{description}</p>
             <a href="storagepro.html">
                 <button>VIEW MORE</button>
